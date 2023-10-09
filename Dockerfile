@@ -19,5 +19,5 @@ RUN curl https://get.modular.com | \
 
 RUN modular install mojo
 
-ENV MODULAR_HOME $HOME/.modular
+ENV MODULAR_HOME /root/.modular
 ENV PATH $MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH

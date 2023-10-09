@@ -5,6 +5,7 @@ RUN apt update -y && \
       apt-transport-https \
       python3.10-venv \
       gnupg \
+      lldb \
       man \
       make \
       less \
@@ -17,3 +18,5 @@ RUN curl https://get.modular.com | \
     sh -
 
 RUN modular install mojo
+
+ENV PATH $MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH
